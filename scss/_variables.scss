@@ -1,0 +1,22 @@
+// VARIABLES
+$texto: blue;
+$color-primario: darkblue;
+$color-secundario:#E0951F;
+$hover-secundario: #b36e00;
+$hover-otro: #ffdda7;
+$color-terciario: #eeeeee;
+$color-grey:#212529;
+$color-fuente: white;
+$fuente-primaria: 'Open Sans', sans-serif;
+$fuente_titulos: 'Raleway', sans-serif;
+// MAPAS
+$colores: (
+    primario:darkblue,
+    secundario: #E0951F,
+    terciario: #eeeeee
+);
+$colores-hover: (
+    primario:rgb(0, 0, 107),
+    secundario: #d07f00,
+    terciario: #cacaca
+);

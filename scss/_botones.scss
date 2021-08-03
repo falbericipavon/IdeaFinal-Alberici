@@ -1,0 +1,137 @@
+/******** BEM - BOTONES *******/
+/** BLOQUE - ELEMENTO - MODIFICADOR **/
+.btn{
+    border-radius: 24px;
+    color: $color-fuente;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 1.20rem;
+    font-family: $fuente-primaria;
+}
+.contenedosbtn{
+    padding-top: 20px;
+}
+.btn__comunes{
+    @extend .btn;
+    background-color: $color-secundario;
+    border-radius: 24px;
+    padding: .5rem 1rem;
+    margin-top: .5rem;
+    &:hover{
+        background-color: $hover-secundario !important;
+    }
+}
+.btn__chicos{
+    height: 3rem;
+    width: 3rem;
+    border-radius: .3rem !important;
+}
+.btn__chicos--iconos{
+    background-color: $color-secundario !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    border-radius: .3rem !important;
+    i{
+        color: $color-fuente !important;
+    }
+}
+.navbar-nav{
+    a {
+        color: $color-primario !important;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        display: block;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        font-weight: 600 !important;
+    }
+    a:hover {
+        color: black !important;
+    }
+}
+.btn__nav{
+    background-color: $color-secundario;
+    border-radius: 24px;
+    color: $color-fuente !important;
+    padding: 3px 7px;
+    a{
+        color: $color-fuente !important;
+    }
+    &:hover {
+        background-color: $hover-secundario!important;
+    }
+    a:hover{
+        color: $color-fuente !important;
+    }
+}
+footer a{
+    text-decoration: none;
+    a:hover{
+        color: #efefef !important;
+    }
+}
+
+/******** EACH - BOTONES ********/
+@each $name-color, $bgcolor in $colores{
+    .btn--#{$name-color} {
+        background-color: $bgcolor;
+        border: none;
+    }
+}
+@each $name-color, $bgcolor in $colores-hover{
+    .btn--#{$name-color}:hover {
+        background-color: $bgcolor;
+        border: none;
+        color: $color-fuente;
+    }
+}
+
+/******** BEM - LINKS ********/
+.breadcrumbcon{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.breadcrumbcon__item{
+    @extend .breadcrumbcon;
+    padding-left: .5rem;
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        color: $hover-secundario !important;
+    }
+}
+.breadcrumbcon__item--active{
+    color: #6c757d;
+    padding-left: .5rem;
+}
+.breadcrumbcon__item--active::before{
+    float: left;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+.breadcrumbcon__item--inactive{
+    color: $color-secundario !important;
+}
+.breadcrumbcon__item--inactiveseg{
+    color: $color-secundario !important;
+    padding-left: .5rem;
+}
+.breadcrumbcon__item--inactiveseg::before{
+    float: left;
+    padding-right: .5rem;
+    color: $color-secundario;
+    content: var(--bs-breadcrumb-divider, "/");
+}

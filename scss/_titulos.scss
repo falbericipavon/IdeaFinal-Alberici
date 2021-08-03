@@ -1,0 +1,110 @@
+
+
+/******** MAPAS - TITULOS ********/
+@each $name-color, $color in $colores{
+    .title--#{$name-color} {
+        color: $color;
+    }
+}
+
+/******** BEM - TITULOS ********/
+.title{
+    font-family: $fuente_titulos !important;
+}
+.titulo__negrita{
+    font-weight: 900 !important;
+}
+.logo{
+    @extend .title;
+    @extend .titulo__negrita;
+    font-size: 1.8rem !important;
+}
+.title__important{
+    h1{
+        font-size: 2.5em;
+        @extend .title;
+        @extend .titulo__negrita;
+    }
+    h2{
+        font-size: 1.9em;
+        @extend .title;
+        @extend .titulo__negrita;
+    }
+    h3{
+        font-size: 1.4em;
+        @extend .title;
+        @extend .titulo__negrita;
+    }
+}
+.title__sub {
+    @extend .title;
+    font-weight: 600 !important;
+    font-size: 1.22rem; 
+}
+.title__historia{
+    @extend .title;
+    font-weight: 800 !important;
+}
+.slider-texto{
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    h1{
+        font-family: $fuente_titulos !important;
+        font-size: 2rem;
+        font-weight: 900 !important;
+        margin:0;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 500 !important;
+        margin: 1px;
+    }
+}
+
+
+
+/******** CONDICIONAL - TITULOS ********/
+.title--cond{
+    @if $texto == blue {
+        color: $color-primario;
+    } @else if $texto == orange{
+        color: $color-secundario;
+    } @else{
+      color: $color-terciario;
+    }
+  }
+
+
+
+/******** BEM - PARRAFOS ********/
+.parrafos{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.5;
+    font-size: 1.20em !important
+}
+.parrafos--orange{
+    @extend .parrafos;
+    color: $color-secundario;
+    font-weight: 500;
+    font-style: italic; 
+}
+.parrafos--white{
+    @extend .parrafos;
+    color: $color-fuente; 
+}
+.parrafos--grey{
+    @extend .parrafos;
+    color: #6c757d !important;
+    font-weight: 400 !important;
+    font-size: 1.20rem; 
+}

@@ -1,0 +1,23 @@
+
+
+/******** BEM - MENU ********/
+.nav{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    list-style: none;
+    text-decoration: none;
+}
+.nav__link {
+    display: block;
+    padding: .5rem 1rem;
+}
+.nav--logo{
+    color: $color-primario;
+    font-size: 30px;
+    font-weight: 800;
+}

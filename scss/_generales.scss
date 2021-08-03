@@ -1,0 +1,21 @@
+* {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+
+}
+p{
+    font-family: $fuente-primaria;
+}
+
+
+
+html{
+    font-family: $fuente-primaria!important;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

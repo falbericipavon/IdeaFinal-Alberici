@@ -1,0 +1,65 @@
+$color-primario: darkblue;
+$color-secundario:#E0951F;
+$color-terciario: #eeeeee;
+$color-fuente: white;
+$fuente-primaria: 'Open Sans', sans-serif;
+$fuente-secundaria: 'Roboto', sans-serif;
+
+/******** BEM - SECTIONS ********/
+.bg{
+    text-decoration: none;
+}
+.bg--grey{
+    background-color: $color-terciario;
+}
+.bg--crema{
+    background-color: rgb(255, 243, 218);
+}
+.bg--orange{
+    background-color: $color-secundario;
+}
+.bg--black{
+    background-color: #212529;
+}
+/******** BEM - CAJA ********/
+.caja{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(75, 75, 75, 0.125);
+    border-radius: .25rem;
+}
+.caja__cuerpo{
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+.card {
+    display: block;
+    p {
+        font-size: 1.20em !important;
+    }
+}
+.bg-crema-ser {
+    background-color: rgb(255, 243, 218);
+}
+
+/******** BEM - COLUMNAS Y FILAS ********/
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5); 
+}
+.row--center{
+    justify-content: center !important;
+}
+.row--right{
+    justify-content: right !important;
+}

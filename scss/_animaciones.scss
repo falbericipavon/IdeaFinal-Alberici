@@ -1,0 +1,17 @@
+/******** ANIMACIONES- ********/
+.div-animado{
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+.div--animado_1{
+    animation-duration: 5s;
+    animation-name: aparecerlento;
+}
+@keyframes aparecer {
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes aparecerlento {
+    10%{ opacity: 0;}
+    100%{opacity: 1;}
+}

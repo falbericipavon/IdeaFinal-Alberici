@@ -273,6 +273,10 @@ footer a {
 .row--right {
   justify-content: right !important; }
 
+@media (max-width: 992px) {
+  .oculto_movil {
+    display: none; } }
+
 /******** BEM - MENU ********/
 .nav {
   position: relative;

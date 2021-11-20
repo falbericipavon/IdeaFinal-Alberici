@@ -43,6 +43,16 @@
         color: $color-fuente !important;
     }
 }
+.btn-servicios{
+    color: $color-secundario !important;
+    i{
+        font-size: 1.5rem;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 30px;
+
+    }
+}
 .navbar-nav{
     a {
         color: $color-primario !important;

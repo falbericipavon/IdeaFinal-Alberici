@@ -122,6 +122,14 @@
   .btn__chicos--iconos i {
     color: white !important; }
 
+.btn-servicios {
+  color: #E0951F !important; }
+  .btn-servicios i {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px; }
+
 .navbar-nav a {
   color: darkblue !important;
   padding-right: .5rem;
@@ -255,7 +263,15 @@ footer a {
     font-size: 1.20em !important; }
 
 .bg-crema-ser {
-  background-color: #fff3da; }
+  background-color: #fff3daad;
+  border-radius: 8px; }
+
+.servicios .parrafos--grey {
+  font-size: 1rem !important; }
+
+.servicios .title__important h3 {
+  font-size: 1.4em;
+  color: darkblue; }
 
 /******** BEM - COLUMNAS Y FILAS ********/
 .row {
@@ -276,6 +292,56 @@ footer a {
 @media (max-width: 992px) {
   .oculto_movil {
     display: none; } }
+
+#why-us {
+  padding: 60px 0;
+  background: white; }
+
+#why-us .section-header h3,
+#why-us .section-header p {
+  color: #6c757d;
+  line-height: 1.6rem;
+  font-size: 1.1rem !important; }
+
+#why-us .card {
+  background: #fff3da;
+  border-color: #fff3da;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  height: 100%; }
+
+#why-us .card-title {
+  margin-top: 1.5rem;
+  color: darkblue; }
+
+#why-us .card i {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #E0951F;
+  text-align: center; }
+
+#why-us h2 {
+  font-size: 1.6rem;
+  color: darkblue !important;
+  font-weight: 800;
+  font-family: 'Raleway'; }
+
+#why-us .card h5 {
+  font-size: 22px;
+  font-weight: 800;
+  font-family: 'Raleway'; }
+
+#why-us .card p {
+  font-size: 15px;
+  color: #6c757d; }
+
+#why-us .card-text {
+  line-height: 1.6rem;
+  font-size: 1.1rem !important; }
 
 /******** BEM - MENU ********/
 .nav {
